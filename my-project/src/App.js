@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-
+import {Input} from 'antd'
 
 const App = ()=>{
   const [count,setCount] = useState(0)
@@ -7,12 +7,13 @@ const App = ()=>{
 
   })
 
-  const changeCOunt = ()=>{
+  const changeCount = ()=>{
     setCount(count+1)
   }
   return <div>
-      <div onClick={changeCOunt}>count++</div>
+      <div onClick={changeCount}>count++</div>
       <div>{count}</div>
+      <div>1233<Input/></div>
     </div>
 }
 
